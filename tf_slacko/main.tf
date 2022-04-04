@@ -24,12 +24,7 @@ data "aws_subnet" "slacko-app-sbnet-public" {
 
 resource "aws_key_pair" "slacko-key-ssh" {
     key_name = "slacko-ssh-key"
-    public_key = "ssh-rsa MIIBCgKCAQEA+xGZ/wcz9ugFpP07Nspo6U17l0YhFiFpxxU4pTk3Lifz9R3zsIsu
-    ERwta7+fWIfxOo208ett/jhskiVodSEt3QBGh4XBipyWopKwZ93HHaDVZAALi/2A
-    +xTBtWdEo7XGUujKDvC2/aZKukfjpOiUI8AhLAfjmlcD/UZ1QPh0mHsglRNCmpCw
-    mwSXA9VNmhz+PiB+Dml4WWnKW/VHo2ujTXxq7+efMU4H2fny3Se3KYOsFPFGZ1TN
-    QSYlFuShWrHPtiLmUdPoP6CV2mML1tk+l7DIIqXrQhLUKDACeM5roMx0kLhUWB8P
-    +0uj1CNlNN4JRZlC7xFfqiMbFRU9Z4N6YwIDAQAB= slacko"
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6C6L6B4Uh43z4MKuDdfNlq5fMb0CvEEun3Su9Xrd9SNP1pnDZnoq3cQq/+diA81M+15P/aztccmsXDjL1OarJOE6FEim/gYcPmaYIO5G7FjGYosGgy+Yh1/9+J/fGQXG8w2V+a2cx6PA7Bt27YfBrlHPSgjwcZsbHo/vzSTs8B1ZG7YxljVJliORUCNBK1vk3rYyFjlDSFrIXEne5YOsq+KphKkCNokasLtv0C8A1jhMT8tYCogvXcS+4/FnmsAQ1Al3CibwAlLybRISoABvsoHJoywJ4B4/yCgCBHxX4Na63nHv84CdtIxGeIKOtoG8E4n86Ig77/VPbvPi/URyhZj6jVv7SyxPrNuQNMyC2qtFlbEmj7l5PAyN9cFUN1M4hvW4BW4yTkGXBYPIclAg2uTZDmGnzZETV3pBwauoqEyDIBE3gce8Ksk7LBptDWmma6kD9DUGZSH9Eg/JmtEN/+6hmES8L0olbS5kuJAVGfXgcsAfVBZA11qPTRz4+uZ8= slacko"
 }
 
 resource "aws_route53_zone" "iaac-zone" {
